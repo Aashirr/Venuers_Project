@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .paina {
+      text-align: center;
+      background-color: black;
+      color: white;
+    }
+
+    .center {
+      margin: 0% 30%;
+      /*margin-top: 30px;
+	  width: 60%; */
+      border: 3px solid #73AD21;
+      padding: 10px;
+      top: 50%;
+
+    }
+
+    body {
+      background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, rgb(202 206 235) 100%);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1><b>REGISTERATION FORM</b></h1>
+  </center>
+
+  <br>
+  <form action="register.php" method="post">
+    <div class="center">
+      <div class="mb-3">
+
+        <input type="text" name="name" class="form-control" id="name" aria-describedby="Name" placeholder="Name">
+
+
+        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
+          placeholder="Email address">
+
+        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+
+        <input type="text" class="form-control" id="mobile" placeholder="Phone number" name="mobile">
+
+        <label>Gender:</label><BR>
+        <input type="radio" name="gender" id="gender"><b> Male</b> <br>
+        <input type="radio" name="gender" id="gender"> <b>Female </b><br>
+        <input type="radio" name="gender" id="gender"> <b>Other </b><br>
+        <br>
+
+        <h4>Address :</h4>
+
+
+        <input type="text" class="form-control" placeholder="Address" required="" name="address" id="address">
+
+
+        <input type="text" class="form-control" placeholder="Pincode" required="" name="pincode" id="pincode">
+
+        <br>
+        <center>
+
+          <button class="btn">Submit</button>
+
+        </center>
+
+  </form>
+
+
+</body>
+
+</html>

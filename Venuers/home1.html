@@ -1,0 +1,388 @@
+<%@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    VENUE NOW
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .col-lg-2 {
+      height: 120px;
+      display: inline-block;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown:hover {
+      font-weight: bold;
+    }
+
+    .paina {
+      height: 120px;
+      text-align: center;
+      background-image: url("C:\\Users\\Farisa\\Desktop\\pic.jpg");
+      background-position: bottom center;
+      color: whitesmoke;
+    }
+
+    .nav-item:hover {
+      /* background-color: #6c757d; */
+      font-weight: bold;
+    }
+
+    .btn-group me-2 {
+      padding: 12px;
+    }
+
+    .item,
+    img {
+      height: 100% !important;
+      width: 100% !important;
+      /* border: 1px solid red; */
+    }
+
+    .col img {
+      border-radius: 100%;
+    }
+
+    body {
+      background-color:rgb(183, 251, 12);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="color: black;">
+    <div class=" container-fluid">
+    <a class="navbar-brand" id="navbar" href="#"><b>VENUE NOW</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home1.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="mens.html" id="navbarDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">PLANS</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="shirt.html">Book now!!</a></li>
+            <li><a class="dropdown-item" href="trousers.html">Favourities</a></li>
+            <li><a class="dropdown-item" href="trousers.html">Food and Banquets</a></li>
+            <li><a class="dropdown-item" href="#">Destinations</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <!--<li><a class="dropdown-item" href="#">Male Cosmetics</a></li>-->
+            <li><a class="dropdown-item" href="#">Destination Weddings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">DESTINATIONS</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Available</a></li>
+            <li><a class="dropdown-item" href="#">Early bookings</a></li>
+            <li><a class="dropdown-item" href="#">Near me</a></li>
+            <li><a class="dropdown-item" href="#">Outskirts</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Book now</a></li>
+            <li><a class="dropdown-item" href="#">Later Bookings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            CARDS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="boys.html">Muslim cards</a></li>
+            <li><a class="dropdown-item" href="girls.html">Hindu cards</a></li>
+            <li><a class="dropdown-item" href="#">christian cards</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Explore Designs now</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Contact Us Now!
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.instagram.com/aashirrahmedd/">Aashir Ahmed Jalili</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/manikanta_adapa/">Anusha</a></li>
+            <li><a class="dropdown-item" href="#anirudhcontact">Gopi</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/syed.ashraf1843/">satwik</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/karthikeyauppu/">Aashrita</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search....." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>&nbsp&nbsp
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-outline-secondary" onclick="location.href='login.html'">Login</button>
+          <button type="button" class="btn btn-outline-secondary" onclick="location.href='signup.html'">Signup</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <div class="cl">
+    <div class="cl" style="margin: auto;">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://dwpinsider.com/blog/wp-content/uploads/2022/01/1000x600.png" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://gerona.ca/wp-content/uploads/2022/06/wedding-photographer-italy-main-image-beautiful-wedding-1000x600.png" width="150"
+              height="100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://etimg.etb2bimg.com/photo/84010712.cms " alt="..." width="240" height="120">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 card-details">
+      <div class="col">
+        <div class="card h-200">
+          <img src="https://images.desimartini.com/media/main/gallery/2021-11/45c2d6c4-cefe-4d39-b904-dd67ab2f8694.jpg" class="card-img-top" alt="..."
+            height="200">
+          <div class="card-body" style="font-family:'Segoe UI' ;">
+            <h5 class="card-title">AESTHETIC WEDDINGS</h5>
+            <p class="card-text">We provide high end to budget friendly Wedding Destinations and planners!.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-200">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2021/1/DA/SS/QB/37093823/cafe-interior-design-500x500.jpg" class="card-img-top"
+            alt="..." height="200">
+          <div class="card-body" style="font-family:'Segoe UI' ;">
+            <h5 class="card-title">VENUE FOR MEETINGS</h5>
+            <p class="card-text">Comfortable and spacious lounges for meetings and gettogethers.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-200">
+          <img src="https://m.photos.timesofindia.com/thumb.cms?msid=62033426&width=500&resizemode=4" class="card-img-top" alt="..."
+            height="200">
+          <div class="card-body">
+            <h5 class="card-title">LUXURIOUS EXPERIENCES</h5>
+            <p class="card-text">A memory for lifetime.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-200">
+          <img src="https://5.imimg.com/data5/LO/OE/RO/SELLER-788682/laser-wedding-cards-500x500.jpg" class="card-img-top" alt="..."
+            height="200">
+          <div class="card-body">
+            <h5 class="card-title">CARD MAKERS</h5>
+            <p class="card-text">We design cards too just ask ;).</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7" style="font-style:italic ;">
+        <h2 class="featurette-heading">OUR SPECIALITIES<span class="text-muted">  forte!!.</span>
+        </h2>
+        <p class="lead">We link you all to the best of the destinations and venues for your events and functions.
+          The variety of events may end but our options won't...
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://i0.wp.com/eventertainments.com/blog/wp-content/uploads/2021/02/ERSVTohUcAAMoFa.jpg?w=1280&ssl=1" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">EXPERIENCE SAYS IT <span class="text-muted">Numbers game</span></h2>
+        <p class="lead">We have suggested and lead many clients to have their best events and functions suggested and some of them performed by us.
+          (You can view our ratings on our official instagram page :>)
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://www.businessinsider.in/thumb.cms?msid=44744791&width=1200&height=900" alt=""
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, The Cards!!. <span class="text-muted">Design now..</span></h2>
+        <p class="lead">We also provide high end high graphic wedding cards, invitation cards and banquet cards.Ask our designers or message them privately and tell them bout your needs and wants We're always there for you.</p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="https://assets.materialup.com/uploads/24ea0e0c-7723-4f4a-854c-35346a0d0bec/preview.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+          alt="">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+  <div class="col-lg-6 text-info">
+    <ul class="fa-ul" style="color: rgb(121, 21, 164)";"margin-right:0pc"
+      <li><span class="fa-li"><i class="fal fa-address-card"></i></span><b><a href="event-crm-software.cfm" class="text-info">Event Manager's desk</a></b></li>
+      <li><span class="fa-li"><i class="fal fa-inbox-in"></i></span><b><a href="event-crm-software.cfm" class="text-info">Lead Tracking + Online Webforms</a></b></li>
+      <li><span class="fa-li"><i class="fal fa-users"></i></span><b><a href="event-client-portal.cfm" class="text-info">Client Portals</a></b></li>
+      <li><span class="fa-li"><i class="fal fa-envelope-open-text"></i></span><b><a href="event-email-communications.cfm" class="text-info">Email Communications</a></b></li>
+      <li><span class="fa-li"><i class="fal fa-file-invoice"></i></span><b><a href="banquet-event-order-software.cfm" class="text-info">Banquet Event Orders</a></b></li>
+      <li><span class="fa-li"><i class="fal fa-utensils"></i></span><b><a href="food-and-beverage-software.cfm" class="text-info">Food-&amp;-Beverage Management</a></b></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+        <div class="info info-horizontal" style="padding-top:30px;">
+            <div class="icon icon-info" data-aos="fade-down">
+                <i class="fal fa-mobile"></i>
+            </div>
+            <div class="description">
+                <h4 class="info-title"><b>Mobile-friendly version</b> that is fully responsive so it works great via the Web browser on any tablet or mobile device</h4>
+            </div>
+        </div>
+        <div class="info info-horizontal" style="padding-top:30px;">
+            <div class="icon icon-danger" data-aos="fade-down">
+                <i class="fal fa-file-import"></i>
+            </div>
+            <div class="description">
+                <h4 class="info-title"><b>White-glove onboarding</b> that includes adding your logo, brand color and existing data to your account <sup>*</sup></h4>
+            </div>
+        </div>
+        <div class="info info-horizontal" style="padding-top:30px;">
+            <div class="icon icon-success" data-aos="fade-down">
+                <i class="fal fa-chalkboard-teacher"></i>
+            </div>
+            <div class="description">
+                <h4 class="info-title"><b>Customized live training</b> over the Web so you and your team can get up to speed quickly and start getting things done <sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="phone-container">
+            <img loading="lazy" src=https://www.reliancedigital.in/medias/Apple-iPhone-13-Mini-Smartphones-491997722-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzgxNHxpbWFnZS9qcGVnfGltYWdlcy9oNWUvaDBlLzk2MzczNDgxMTQ0NjIuanBnfGNjZjBjN2EwZDQwNWU0ZmE3MmYwYzZhZDBmNGVlN2RjYmY2YmMyNTc4MjEyZWE3NmQyODdlZjA3NmQyOGU1ZTA" alt="Mobile phone displaying Planning Pod contacts list">
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="info info-horizontal" style="padding-top:30px;color: white;">
+            <div class="icon icon-info" data-aos="fade-down">
+                <i class="fal fa-question"></i>
+            </div>
+            <div class="description">
+                <h2 class="info-title"><b>Comprehensive help center</b> with hundreds of <a href="https://support.planningpod.com/hc/en-us">articles and how-to videos</a> that walk you through every function and feature</h4>
+            </div>
+        </div>
+        <div class="info info-horizontal" style="padding-top:30px;">
+            <div class="icon icon-danger" data-aos="fade-down">
+                <i class="fal fa-comments"></i>
+            </div>
+            <div class="description">
+                <h2 class="info-title"><b>Customer support</b> to answer your questions quickly - includes live chat, email and phone support</h4>
+            </div>
+        </div>
+        <div class="info info-horizontal" style="padding-top:30px;">
+            <div class="icon icon-success" data-aos="fade-down">
+                <i class="fal fa-database"></i>
+            </div>
+            <div class="description">
+                <h2 class="info-title"><b>Secure data transmission and storage</b> including Secure Socket Layer encryption, data-at-rest encryption, server-side firewall protection, daily remote backups and PCI compliance for online payments<sup>*</sup></h4>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+  </script>
+</body>
+
+</html>
